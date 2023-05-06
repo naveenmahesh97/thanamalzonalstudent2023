@@ -1,80 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Student Information System - 2023</title>
-        <title>Zonal Education Office - Thanamalwila</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zonal Education Office - Thanamalwila</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+      /* Body Styles */
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Helvetica Neue', sans-serif;
+        background-color: rgba(255, 5, 151, 0.5);
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header Styles */
+      .header {
+        background-color: #1c1c1e;
+        padding: 20px;
         text-align: center;
-        background-color: #f1f1f1;
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 20px;
       }
-      h1 {
-        margin-top: 50px;
-        margin-bottom: 50px;
+
+      /* Tile Styles */
+      .tile-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
+      
       .tile {
         width: 200px;
         height: 200px;
-        display: inline-block;
         margin: 20px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 0 10px #ddd;
+        background-color: rgba(0, 255, 115, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         text-align: center;
         line-height: 200px;
         font-size: 24px;
         font-weight: bold;
-        color: #333;
+        color: #1c1c1e;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
       }
+
       .tile:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 20px #ddd;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       }
+
+      /* Tile Color Styles */
       .tile:nth-child(1) {
-        background-color: #2C3E50 ;
-        color: #fff;
+        background-color: rgba(0, 247, 255, 0.5);
+        backdrop-filter: blur(10px);
       }
+      
       .tile:nth-child(2) {
-        background-color:#40E0D0;
-        color: #fff;
+        background-color: #ffce54;
       }
+      
       .tile:nth-child(3) {
-        background-color: #6495ED;
-        color: #fff;
+        background-color: #e7505a;
       }
+      
       .tile:nth-child(4) {
-        background-color: #CCCCFF;
-        color: #fff;
+        background-color: #51cf66;
+      }
+      
+      .tile:nth-child(5) {
+        background-color: #ff6b6b;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Student Information System - 2023<br><h2>Zonal Education Office - Thanamalwila</h2><br>
-
-      <div class="row">
-        <div class="col-md-3">
-          <a href="Student Main Information System 2023.html" class="tile">Total Student</a>
-        </div>
-        <div class="col-md-3">
-          <a href="grade 6-9.html" class="tile">Grade 6 - 9</a>
-        </div>
-        <div class="col-md-3">
-          <a href="grade 10 -11.html" class="tile">Grade 10 - 11</a>
-        </div>
-        <div class="col-md-3">
-          <a href="grade 12-13.html" class="tile">Grade 12 - 13</a>
-        </div>
-      </div>
+    <!-- Header -->
+    <div class="header">
+     <h3> Student Information System 2023 <br> Zonal Education Office - Thanamalwila</h3>
     </div>
     
+    <!-- Tile Container -->
+    <div class="tile-container">
+      <a href="Student Main Information System 2023.html" class="tile">All Student</a>
+      <a href="grade 6-9.html" class="tile">Grade 6-9</a>
+      <a href="grade 10 -11.html" class="tile">Grade 10 -11</a>
+      <a href="grade 12-13.html" class="tile">Grade 12-13</a>
+      <a href="EnglishM.html" class="tile">English Medium</a>
+    </div>
+    
+    <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
