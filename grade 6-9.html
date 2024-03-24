@@ -1,114 +1,138 @@
-<form 
-  method="POST" 
-  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScd6v8z8IAdf0Fw81tKs6WEAv7GIPgQvNd3eev4_zTEQt4rJA/formResponse">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 6-9 Student Information</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 30px auto;
+  }
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: *f0f0;
+    color: white;
+    width: 20%;
+    height: 50px;
+  }
+  input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  button[type="submit"], button[type="reset"] {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 45%;
+    background-color: #58D68D;
+  }
+  button[type="reset"] {
+    background-color: orange;
+  }
+  caption {
+    margin-top: 10px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
 
-<script>
-  document.addEventListener("contextmenu", function(e){
-    e.preventDefault();
-  }, false);
-</script>
-
-
-
-
-
- 
-<table align="center" border="5" bordercolor="white"  >
+<form method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScd6v8z8IAdf0Fw81tKs6WEAv7GIPgQvNd3eev4_zTEQt4rJA/formResponse">
   
- <H1 align="center" style="color: rgb(0, 0, 0);">Grade 6-9 Student Information</H1>
- <H3 align="center" style="color: rgb(0, 0, 0);">Zonal Education Office - Thanamalwila</H3>
-  <tr>
+  <table border="5" bordercolor="white">
+    <tr>
+      <th colspan="2" >
+        <h1 style="color: black;">Grade 6-9 Student Information</h1>
+        <h3 style="color: black;">Zonal Education Office - Thanamalwila</h3>
+      </th>
+    </tr>
+  </table>
 
-<col style="background-color:rgb(238, 255, 0)">
-  </colgroup>
+  <table border="5" bordercolor="black" style="width: 70%;">
+    <tr>
+      <th style="background-color: #333;">Census Number</th>
+      <td><input name="entry.1343582441" type="number" placeholder="Enter census number" required></td>
+    </tr>
+    <tr>
+      <th style="background-color: #333;">Name of the School</th>
+      <td><input name="entry.1238953002" type="text" placeholder="Enter School Name" required></td>
+    </tr>
+  </table>
 
-    <th style="AUTO""HEIGHT:30%"   BORDER="9" align="center"><h4 align="center">School Census Number</h4></th>
-  <td align="center" col style="background-color:rgb(0, 0, 0)" ><input name="entry.1343582441" type="text" placeholder="" required ></td>
-
-  <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-    </style>
-   <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-    .tg .tg-8gll{background-color:#00ffd5;font-weight:bold;text-align:center;vertical-align:top}
-    .tg .tg-0lax{text-align:left;vertical-align:top}
-    </style>
-
-    <table class="tg" style="undefined;table-layout: fixed; width: AUTO" align="center" bgcolor="white">
-    <colgroup>
-    <col style="width: 196px">
-    <col style="width: 119px">
-    </colgroup>
+  <table border="5" bordercolor="black" style="width: 70%;">
     <thead>
       <tr>
-        <th class="tg-8gll">SUBJECT NAME</th>
-        <th class="tg-8gll">GRADE 6 STUDENTS</th>
-        <th class="tg-8gll">GRADE 7 STUDENTS</th>
-        <th class="tg-8gll">GRADE 8 STUDENTS</th>
-        <th class="tg-8gll">GRADE 9 STUDENTS</th>
+        <th style="background-color: #333;">SUBJECT NAME</th>
+        <th style="background-color: #333;">GRADE 6 STUDENTS</th>
+        <th style="background-color: #333;">GRADE 7 STUDENTS</th>
+        <th style="background-color: #333;">GRADE 8 STUDENTS</th>
+        <th style="background-color: #333;">GRADE 9 STUDENTS</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="tg-1wig">Oriental Music</td>
-        <td> <input name="entry.2112874712" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.386665448" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.842531277" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.679708994" type="number" placeholder=""  style="height:30"  </td>
+        <td>Oriental Music</td>
+        <td><input name="entry.2112874712" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.386665448" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.842531277" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.679708994" type="number" placeholder="" style="height: 40px;"></td>
       </tr>
       <tr>
-        <td class="tg-1wig">Oriental Dancing</td>
-        <td> <input name="entry.820222077" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.1061140875" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.1495265228" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.1808356121" type="number" placeholder=""  style="height:30"  </td>
+        <td>Oriental Dancing</td>
+        <td><input name="entry.820222077" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.1061140875" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.1495265228" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.1808356121" type="number" placeholder="" style="height: 40px;"></td>
       </tr>
       <tr>
-        <td class="tg-1wig">ART</td>
-        <td> <input name="entry.338515463" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.708076428" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.266109644" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.6397079" type="number" placeholder=""  style="height:30"  </td>
+        <td>ART</td>
+        <td><input name="entry.338515463" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.708076428" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.266109644" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.6397079" type="number" placeholder="" style="height: 40px;"></td>
       </tr>
       <tr>
-        <td class="tg-1wig">Drama and Theatre</td>
-        <td> <input name="entry.1713896617" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.1434986346" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.1216111451" type="number" placeholder=""  style="height:30"  </td>
-        <td> <input name="entry.144977010" type="number" placeholder=""  style="height:30"  </td>
+        <td>Drama and Theatre</td>
+        <td><input name="entry.1713896617" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.1434986346" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.1216111451" type="number" placeholder="" style="height: 40px;"></td>
+        <td><input name="entry.144977010" type="number" placeholder="" style="height: 40px;"></td>
       </tr>
-    
     </tbody>
-    </table>
+  </table>
 
-<table  align="center">
-<tr>
-<table style="width:5% ""hight:20%"   align="center" >
-<td><h3 align="center"><button type="submit"  value="Submit" onclick="return confirm('Are you sure you want to submit?');" style="background-color: #58D68D;" ><h3>SUBMIT </h3></h2></button></h3></td>
- <td><h3 align="center"><button type="RESET"  value="reset" onclick="return confirm('Are you sure you want to Reset?');"  style="background-color: orange;"><h3>RESET </h3></h2></button></h3></td>
+  <table align="center">
+    <tr>
+      <td>
+        <button type="submit" value="Submit" onclick="return confirm('Are you sure you want to submit?');">SUBMIT</button>
+      </td>
+      <td>
+        <button type="reset" value="reset" onclick="return confirm('Are you sure you want to Reset?');">RESET</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <caption>ZEO - Thanamalwila</caption>
+      </td>
+    </tr>
+  </table>
 
+</form>
 
-</tr>
-<tr >
- <td><caption align="bottom">ZEO - Thanamalwila</caption></td></tr>
-   <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwNtTQjqkka3cdvKz-K-hQlPKZumoknP3qPaEKwFFVc98B122fvYloIQ76pu8Hf8Nvo/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+</body>
+</html>
