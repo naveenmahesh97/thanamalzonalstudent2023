@@ -40,6 +40,23 @@
   #resetBtn {
     background-color: red;
   }
+  /* Common styles for all devices */
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  h1, p {
+    margin-bottom: 20px;
+  }
+  /* Tablet and mobile styles */
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
 </style>
 <script>
   document.addEventListener("contextmenu", function(e){
