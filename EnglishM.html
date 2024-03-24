@@ -1,3 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Medium Students</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+	font-size: 15px; /* Corrected unit */
+	align=left
+  }
+  table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 50px auto;
+  }
+  th, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  th {
+    background-color: purple;
+    color: white;
+    width: 10%;
+    height: 50px;
+  }
+  input[type="number"], input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 30px; /* Set height to match */
+  }
+  button[type="submit"], button[type="reset"] {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 0px;
+    color: white;
+    width: 100%;
+    background-color: #58D68D;
+  }
+  button[type="reset"] {
+    background-color: orange;
+  }
+  caption {
+    margin-top: 10px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
 <form 
   method="POST" 
   action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeStHlEe5-eCF9-BZ_KHhlttp7RW7IDJrlq7VyZ7q6regeAOw/formResponse">
@@ -13,7 +69,7 @@
 
 
  
-<table align="center" border="5" bordercolor="white"  >
+<table align="center" border="5" bordercolor="white">
   
  <H1 align="center" style="color: rgb(0, 0, 0);">English Medium Student Information</H1>
  <H3 align="center" style="color: rgb(0, 0, 0);">Zonal Education Office - Thanamalwila</H3>
@@ -21,35 +77,23 @@
 
 <col style="background-color:rgb(238, 255, 0)">
   </colgroup>
+<tr>
+    <th style="width: 20%; height: 50px; background-color: purple; color: white; border: 5px solid black; text-align: center;"><h4>School Census Number</h4></th>
+    <td style="width: 50%; border: 5px solid black; background-color:rgb(255, 255, 255);"><input name="entry.1913152646" type="text" placeholder="" required style="width: 100%; padding: 8px; box-sizing: border-box; height: 30px;"></td>
+</tr>
+<tr>
+    <th style="width: 20%; height: 50px; background-color: purple; color: white; border: 5px solid black; text-align: center;"><h4>Name of the School</h4></th>
+    <td style="width: 50%; border: 5px solid black; background-color:rgb(255, 255, 255);"><input name="entry.469727033" type="text" placeholder="" required style="width: 100%; padding: 8px; box-sizing: border-box; height: 30px;"></td>
+</tr>
 
-    <th style="AUTO""HEIGHT:30%"   BORDER="9" align="center"><h4 align="center">School Census Number</h4></th>
-  <td align="center" col style="background-color:rgb(0, 0, 0)" ><input name="entry.1913152646" type="text" placeholder="" required ></td>
 
-  <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-    </style>
-   <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-    .tg .tg-8gll{background-color:#59ff27;font-weight:bold;text-align:center;vertical-align:top}
-    .tg .tg-0lax{text-align:left;vertical-align:top}
-    </style>
-
-    <table class="tg" style="undefined;table-layout: fixed; width: AUTO" align="center" bgcolor="white">
+    <table class="tg" style="undefined;table-layout: fixed; width: AUTO" align="center" bgcolor="white" >
     <colgroup>
-    <col style="width: 196px">
-    <col style="width: 119px">
+    <col style="width: 70px">
+    <col style="width: 70px">
     </colgroup>
     <thead>
+
       <tr>
         <th class="tg-8gll">SUBJECT NAME</th>
         <th class="tg-8gll">GRADE 6 </th>
@@ -156,16 +200,17 @@
     </tbody>
     </table>
 
-<table  align="center">
-<tr>
-<table style="width:5% ""hight:20%"   align="center" >
-<td><h3 align="center"><button type="submit"  value="Submit" onclick="return confirm('Are you sure you want to submit?');" style="background-color: #58D68D;" ><h3>SUBMIT </h3></h2></button></h3></td>
- <td><h3 align="center"><button type="RESET"  value="reset" onclick="return confirm('Are you sure you want to Reset?');"  style="background-color: orange;"><h3>RESET </h3></h2></button></h3></td>
+<div style="width: 60%; margin: 30px auto;">
+    <div style="display: flex; justify-content: center;">
+        <button type="submit" value="Submit" onclick="return confirm('Are you sure you want to submit?');" style="background-color: #58D68D; padding: 12px 24px; border: none; cursor: pointer; font-size: 16px; border-radius: 0px; color: white; width: 45%; margin-right: 10px;">SUBMIT</button>
+        <button type="reset" value="Reset" onclick="return confirm('Are you sure you want to reset?');" style="background-color: orange; padding: 12px 24px; border: none; cursor: pointer; font-size: 16px; border-radius: 0px; color: white; width: 45%;">RESET</button>
+    </div>
+    <div style="text-align: center; margin-top: 10px;">
+        <caption>ZEO - Thanamalwila</caption>
+    </div>
+</div>
 
-
-</tr>
-<tr >
- <td><caption align="bottom">ZEO - Thanamalwila</caption></td></tr>
+ 
    <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbwNtTQjqkka3cdvKz-K-hQlPKZumoknP3qPaEKwFFVc98B122fvYloIQ76pu8Hf8Nvo/exec'
             const form = document.forms['google-sheet']
