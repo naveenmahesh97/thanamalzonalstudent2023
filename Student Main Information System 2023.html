@@ -1,269 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Student Information System - 2024 </title>
-<style>
-  body {
-    background-color: "white";
-    color: black;
-    font-family: Arial, sans-serif;
-
-  }
-  table {
-    margin: 0 auto;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 10px;
-    border: 2px solid black;
-  }
-  th {
-    background-color: rgb(30, 30, 30);
-    color: black;
-  }
-  input[type="text"],
-  input[type="number"] {
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-  }
-  button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  #submitBtn {
-    background-color: #58D68D;
-  }
-  #resetBtn {
-    background-color: red;
-  }
-.container {
-    width: 1200px; /* Match the width set in the viewport meta tag */
-    margin: 0 auto;
-    padding: 20px;
-</style>
-<script>
-  document.addEventListener("contextmenu", function(e){
-    e.preventDefault();
-  }, false);
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System - 2024</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .data-table th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+        .data-table td {
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        .data-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .data-table input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .section-header {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .btn-submit {
+            background-color: #2ecc71;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #27ae60;
+            transform: scale(1.05);
+        }
+        .btn-reset {
+            background-color: #e74c3c;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-reset:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-100 p-4">
+    <div class="form-container">
+        <form name="google-sheet" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePALyNGTNfzfsTn7ZruZ7ZeInekYQZMfR1tmufREIt2j1AYQ/formResponse">
+            <h1 class="text-3xl font-bold text-center mb-4 text-gray-800">Student Information System - 2024</h1>
+            <h3 class="text-xl text-center mb-6 text-gray-600">Zonal Education Office - Thanamalwila</h3>
 
-<form name="google-sheet" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePALyNGTNfzfsTn7ZruZ7ZeInekYQZMfR1tmufREIt2j1AYQ/formResponse">
+            <table class="data-table mb-4">
+                <tr>
+                    <th class="w-1/4">Census Number</th>
+                    <td><input name="entry.408754002" type="number" placeholder="Enter census number" required></td>
+                </tr>
+                <tr>
+                    <th>Name of the School</th>
+                    <td><input name="entry.424507519" type="text" placeholder="Enter School Name" required></td>
+                </tr>
+            </table>
 
-<h1 align="center">Student Information System - 2024</h1>
-<h3 align="center">Zonal Education Office - Thanamalwila</h3>
+            <table class="data-table mb-4">
+                <tr>
+                    <th colspan="4" class="section-header">Student Distribution by Grade and Gender</th>
+                </tr>
+                <tr>
+                    <th>GRADE</th>
+                    <th>MALE</th>
+                    <th>FEMALE</th>
+                    <th>CLASS ROOMS</th>
+                </tr>
+                <!-- Grades 1-5 -->
+                <tr><td>GRADE 1</td>
+                    <td><input name="entry.899553635" type="number"></td>
+                    <td><input name="entry.1973494138" type="number"></td>
+                    <td><input name="entry.720944876" type="number"></td>
+                </tr>
+                <tr><td>GRADE 2</td>
+                    <td><input name="entry.2100814648" type="number"></td>
+                    <td><input name="entry.958892310" type="number"></td>
+                    <td><input name="entry.919761774" type="number"></td>
+                </tr>
+                <tr><td>GRADE 3</td>
+                    <td><input name="entry.982102925" type="number"></td>
+                    <td><input name="entry.746811956" type="number"></td>
+                    <td><input name="entry.689478064" type="number"></td>
+                </tr>
+                <tr><td>GRADE 4</td>
+                    <td><input name="entry.1101244366" type="number"></td>
+                    <td><input name="entry.1573091847" type="number"></td>
+                    <td><input name="entry.1192492208" type="number"></td>
+                </tr>
+                <tr><td>GRADE 5</td>
+                    <td><input name="entry.1940388919" type="number"></td>
+                    <td><input name="entry.933924291" type="number"></td>
+                    <td><input name="entry.598363721" type="number"></td>
+                </tr>
 
-<table align="center" border="5" bordercolor="black" style="margin-left: 23.1%;">
+                <!-- Section Headers -->
+                <tr>
+                    <th colspan="4" class="section-header">Grade 6 - 11 Students</th>
+                </tr>
 
-<tr>
-    <th style="color: white; width: auto">Census Number</th>
-    <td><input name="entry.408754002" type="number" placeholder="Enter census number" required></td>
-</tr>
-<tr>
-    <th style="color: white; width: auto;">Name of the School</th>
-    <td><input name="entry.424507519" type="text" placeholder="Enter School Name" required></td>
-</tr>
+                <!-- Grades 6-11 Inputs -->
+                <tr><td>GRADE 6</td>
+                    <td><input name="entry.428307288" type="number"></td>
+                    <td><input name="entry.558636890" type="number"></td>
+                    <td><input name="entry.138653575" type="number"></td>
+                </tr>
+                <tr><td>GRADE 7</td>
+                    <td><input name="entry.1993312966" type="number"></td>
+                    <td><input name="entry.1017439507" type="number"></td>
+                    <td><input name="entry.1838088620" type="number"></td>
+                </tr>
+                <tr><td>GRADE 8</td>
+                    <td><input name="entry.219041418" type="number"></td>
+                    <td><input name="entry.2066360857" type="number"></td>
+                    <td><input name="entry.1524882349" type="number"></td>
+                </tr>
+                <tr><td>GRADE 9</td>
+                    <td><input name="entry.115332939" type="number"></td>
+                    <td><input name="entry.275451657" type="number"></td>
+                    <td><input name="entry.1291005598" type="number"></td>
+                </tr>
+                <tr><td>GRADE 10</td>
+                    <td><input name="entry.213063587" type="number"></td>
+                    <td><input name="entry.719483895" type="number"></td>
+                    <td><input name="entry.733938803" type="number"></td>
+                </tr>
+                <tr><td>GRADE 11</td>
+                    <td><input name="entry.1566901286" type="number"></td>
+                    <td><input name="entry.131135079" type="number"></td>
+                    <td><input name="entry.424134402" type="number"></td>
+                </tr>
 
+                <!-- Grade 12 Section -->
+                <tr>
+                    <th colspan="4" class="section-header">Grade 12 Students</th>
+                </tr>
+                <tr><td>GRADE 12 Bio</td>
+                    <td><input name="entry.695209488" type="number"></td>
+                    <td><input name="entry.822979116" type="number"></td>
+                    <td><input name="entry.1309777040" type="number"></td>
+                </tr>
+                <tr><td>GRADE 12 Maths</td>
+                    <td><input name="entry.80447662" type="number"></td>
+                    <td><input name="entry.80224960" type="number"></td>
+                    <td><input name="entry.733268987" type="number"></td>
+                </tr>
+                <tr><td>GRADE 12 Tech</td>
+                    <td><input name="entry.228534901" type="number"></td>
+                    <td><input name="entry.937914504" type="number"></td>
+                    <td><input name="entry.1894602092" type="number"></td>
+                </tr>
+                <tr><td>GRADE 12 Com</td>
+                    <td><input name="entry.1952050530" type="number"></td>
+                    <td><input name="entry.1199713608" type="number"></td>
+                    <td><input name="entry.1242521325" type="number"></td>
+                </tr>
+                <tr><td>GRADE 12 Art</td>
+                    <td><input name="entry.1842732019" type="number"></td>
+                    <td><input name="entry.1539097185" type="number"></td>
+                    <td><input name="entry.29349261" type="number"></td>
+                </tr>
 
-</table>
+                <!-- Grade 13 Section -->
+                <tr>
+                    <th colspan="4" class="section-header">Grade 13 Students</th>
+                </tr>
+                <tr><td>GRADE 13 Bio</td>
+                    <td><input name="entry.796759274" type="number"></td>
+                    <td><input name="entry.1360095534" type="number"></td>
+                    <td><input name="entry.328047712" type="number"></td>
+                </tr>
+                <tr><td>GRADE 13 Maths</td>
+                    <td><input name="entry.1697458663" type="number"></td>
+                    <td><input name="entry.832612937" type="number"></td>
+                    <td><input name="entry.1423529349" type="number"></td>
+                </tr>
+                <tr><td>GRADE 13 Tech</td>
+                    <td><input name="entry.2073889416" type="number"></td>
+                    <td><input name="entry.475974926" type="number"></td>
+                    <td><input name="entry.542300866" type="number"></td>
+                </tr>
+                <tr><td>GRADE 13 Com</td>
+                    <td><input name="entry.1050802913" type="number"></td>
+                    <td><input name="entry.1501999967" type="number"></td>
+                    <td><input name="entry.1017610918" type="number"></td>
+                </tr>
+                <tr><td>GRADE 13 Art</td>
+                    <td><input name="entry.1494142402" type="number"></td>
+                    <td><input name="entry.368902021" type="number"></td>
+                    <td><input name="entry.1542792251" type="number"></td>
+                </tr>
 
+                <!-- Special Education Unit -->
+                <tr>
+                    <td class="bg-yellow-200 font-bold">Special Education Unit</td>
+                    <td class="bg-yellow-200"><input name="entry.1793277789" type="number"></td>
+                    <td class="bg-yellow-200"><input name="entry.1749643373" type="number"></td>
+                    <td class="bg-yellow-200"><input name="entry.868676761" type="number"></td>
+                </tr>
+            </table>
 
-<table align="center" border="5" bordercolor="black">
-  <tr>
-    <th></th>
-    <th colspan="3" style="color: white;">Gender</th>
-  </tr>
-  <tr>
-    <th style="color: white;">GRADE</th>
-    <th style="color: white;">MALE</th>
-    <th style="color: white;">FEMALE</th>
-    <th style="color: white;">CLASS ROOMS</th>
-  </tr>
-  <!-- Remaining rows with inputs -->
-  <!-- Example row -->
-  <tr>
-    <td>GRADE 1</td>
-    <td><input name="entry.899553635" type="number" ></td>
-    <td><input name="entry.1973494138" type="number" ></td>
-    <td><input name="entry.720944876" type="number"  ></td>
-  </tr>
-   <tr>
-    <td>GRADE 2</td>
-<td> <input name="entry.2100814648" type="number" placeholder="" > </td>
- <td> <input name="entry.958892310" type="number" placeholder=""  > </td>
-<td> <input name="entry.919761774" type="number" placeholder=""  > </td>
-  </tr>
- <tr>
-    <td>GRADE 3</td>
- <td> <input name="entry.982102925" type="number" placeholder="" > </td>
- <td> <input name="entry.746811956" type="number" placeholder=""  > </td>
-<td> <input name="entry.689478064" type="number" placeholder=""  > </td>
-  </tr>
-  <tr>
-    <td>GRADE 4</td>
- <td> <input name="entry.1101244366" type="number" placeholder="" > </td>
- <td> <input name="entry.1573091847" type="number" placeholder=""  > </td>
-<td> <input name="entry.1192492208" type="number" placeholder=""  > </td>
-  </tr>
+            <div class="flex justify-center space-x-4 mb-4">
+                <button type="submit" 
+                        class="btn-submit px-6 py-2 rounded-lg hover:shadow-lg"
+                        onclick="return confirm('Are you sure you want to submit?')">
+                    SUBMIT
+                </button>
+                <button type="reset" 
+                        class="btn-reset px-6 py-2 rounded-lg hover:shadow-lg"
+                        onclick="return confirm('Are you sure you want to reset?')">
+                    RESET
+                </button>
+            </div>
 
- <tr>
-    <td>GRADE 5 </td>
- <td> <input name="entry.1940388919" type="number" placeholder="" > </td>
- <td> <input name="entry.933924291" type="number" placeholder=""  > </td>
-<td> <input name="entry.598363721" type="number" placeholder=""  > </td>
-  </tr>
-<th colspan="4" align="center" style="color: white;">Grade 6 - 11 Students</th>
+            <div class="text-center text-gray-600 mt-4">
+                <p>Development Section<br>Zonal Education Office Thanamalwila</p>
+            </div>
+        </form>
+    </div>
 
- <tr>
-    <td>GRADE 6 </td>
- <td> <input name="entry.428307288" type="number" placeholder="" > </td>
- <td> <input name="entry.558636890" type="number" placeholder=""  > </td>
-<td> <input name="entry.138653575" type="number" placeholder=""  > </td>
-  </tr>
+    <script>
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
 
- <tr>
-    <td>GRADE 7 </td>
- <td> <input name="entry.1993312966" type="number" placeholder="" > </td>
- <td> <input name="entry.1017439507" type="number" placeholder=""  > </td>
-<td> <input name="entry.1838088620" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 8 </td>
- <td> <input name="entry.219041418" type="number" placeholder="" > </td>
- <td> <input name="entry.2066360857" type="number" placeholder=""  > </td>
-<td> <input name="entry.1524882349" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 9 </td>
- <td> <input name="entry.115332939" type="number" placeholder="" > </td>
- <td> <input name="entry.275451657" type="number" placeholder=""  > </td>
-<td> <input name="entry.1291005598" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 10 </td>
- <td> <input name="entry.213063587" type="number" placeholder="" > </td>
- <td> <input name="entry.719483895" type="number" placeholder=""  > </td>
-<td> <input name="entry.733938803" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 11 </td>
- <td> <input name="entry.1566901286" type="number" placeholder="" > </td>
- <td> <input name="entry.131135079" type="number" placeholder=""  > </td>
-<td> <input name="entry.424134402" type="number" placeholder=""  > </td>
-  </tr>
-<tr >
-<th colspan="4" align="center" style="color: white;">Grade 12 Students</th>
-</tr>
- <tr>
-    <td>GRADE 12 Bio </td>
- <td> <input name="entry.695209488" type="number" placeholder="" > </td>
- <td> <input name="entry.822979116" type="number" placeholder=""  > </td>
-<td> <input name="entry.1309777040" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 12 Mathes </td>
- <td> <input name="entry.80447662" type="number" placeholder="" > </td>
- <td> <input name="entry.80224960" type="number" placeholder=""  > </td>
-<td> <input name="entry.733268987" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 12 Tech </td>
- <td> <input name="entry.228534901" type="number" placeholder="" > </td>
- <td> <input name="entry.937914504" type="number" placeholder=""  > </td>
-<td> <input name="entry.1894602092" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 12 Com </td>
- <td> <input name="entry.1952050530" type="number" placeholder="" > </td>
- <td> <input name="entry.1199713608" type="number" placeholder=""  > </td>
-<td> <input name="entry.1242521325" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 12 Art </td>
- <td> <input name="entry.1842732019" type="number" placeholder="" > </td>
- <td> <input name="entry.1539097185" type="number" placeholder=""  > </td>
-<td> <input name="entry.29349261" type="number" placeholder=""  > </td>
-  </tr>
-<th colspan="4" align="center" style="color: white;" >Grade 13 Students</th>
- <tr>
-    <td>GRADE 13 Bio </td>
- <td> <input name="entry.796759274" type="number" placeholder="" > </td>
- <td> <input name="entry.1360095534" type="number" placeholder=""  > </td>
-<td> <input name="entry.328047712" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 13 Mathes </td>
- <td> <input name="entry.1697458663" type="number" placeholder="" > </td>
- <td> <input name="entry.832612937" type="number" placeholder=""  > </td>
-<td> <input name="entry.1423529349" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 13 Tech </td>
- <td> <input name="entry.2073889416" type="number" placeholder="" > </td>
- <td> <input name="entry.475974926" type="number" placeholder=""  > </td>
-<td> <input name="entry.542300866" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 13 Com </td>
- <td> <input name="entry.1050802913" type="number" placeholder="" > </td>
- <td> <input name="entry.1501999967" type="number" placeholder=""  > </td>
-<td> <input name="entry.1017610918" type="number" placeholder=""  > </td>
-  </tr>
-
- <tr>
-    <td>GRADE 13 Art </td>
- <td> <input name="entry.1494142402" type="number" placeholder="" > </td>
- <td> <input name="entry.368902021" type="number" placeholder=""  > </td>
-<td> <input name="entry.1542792251" type="number" placeholder=""  > </td>
-  </tr>
-  <tr>
-    <td style="background-color: yellow;">Special Education Unit </td>
- <td style="background-color: yellow;"> <input name="entry.1793277789" type="number" placeholder="" > </td>
- <td style="background-color: yellow;"> <input name="entry.1749643373" type="number" placeholder=""  > </td>
-<td style="background-color: yellow;"> <input name="entry.868676761" type="number" placeholder=""  > </td>
-  </tr>
-</table>
-
-
-
-<table align="center" bordercolor=black>
-  <tr bordercolor="black">
-    <td><button id="submitBtn" type="submit" onclick="return confirm('Are you sure you want to submit?')">SUBMIT</button></td>
-    <td><button id="resetBtn" type="reset" onclick="return confirm('Are you sure you want to reset?')">RESET</button></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" bordercolor="black"><p>Development Section<br>Zonal Education Office Thanamalwila</p></td>
-  </tr>
-</table>
-
-</form>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwNtTQjqkka3cdvKz-K-hQlPKZumoknP3qPaEKwFFVc98B122fvYloIQ76pu8Hf8Nvo/exec';
-  const form = document.forms['google-sheet'];
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => alert("Thanks"
-      .catch(error => console.error('Error!', error.message));
-  });
-</script>
-
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwNtTQjqkka3cdvKz-K-hQlPKZumoknP3qPaEKwFFVc98B122fvYloIQ76pu8Hf8Nvo/exec';
+        const form = document.forms['google-sheet'];
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for submitting!"))
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
 </body>
 </html>
